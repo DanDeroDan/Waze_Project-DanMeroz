@@ -1,12 +1,11 @@
+//        android:src="@drawable/ic_steerz_logo"
 package com.example.wazeproject_dan;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,16 +37,7 @@ public class login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = emailEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
-
-                // For demonstration, we'll consider any login successful
-                // In a real app, you'd validate the credentials here
-                SharedPreferences sharedPreferences = getSharedPreferences("login_prefs", MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putBoolean("isLoggedIn", true);
-                editor.apply();
-
+                MainActivity.isLoggedIn = true;
                 startActivity(new Intent(login.this, MainActivity.class));
                 finish();
             }
