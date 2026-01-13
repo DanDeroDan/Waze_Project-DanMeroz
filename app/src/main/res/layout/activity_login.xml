@@ -58,6 +58,15 @@
             android:backgroundTint="@color/blue"
             android:text="Login"
             android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Sign In"
+            android:textColor="@color/white" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

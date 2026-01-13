@@ -1,4 +1,3 @@
-//        android:src="@drawable/ic_steerz_logo"
 package com.example.wazeproject_dan;
 
 import android.content.Intent;
@@ -18,6 +17,7 @@ public class login extends AppCompatActivity {
     private EditText emailEditText;
     private EditText passwordEditText;
     private Button loginButton;
+    private Button signinButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class login extends AppCompatActivity {
         emailEditText = findViewById(R.id.editTextTextEmailAddress);
         passwordEditText = findViewById(R.id.editTextTextPassword);
         loginButton = findViewById(R.id.button);
+        signinButton = findViewById(R.id.signin_button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,13 @@ public class login extends AppCompatActivity {
                 MainActivity.isLoggedIn = true;
                 startActivity(new Intent(login.this, MainActivity.class));
                 finish();
+            }
+        });
+
+        signinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(login.this, SigninActivity.class));
             }
         });
     }
