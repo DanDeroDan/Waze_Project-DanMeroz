@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.wazeproject_dan" />
-                  <option name="mobileSdkAppId" value="1:251682901144:android:bab38262840e46dfea94ed" />
-                  <option name="projectId" value="wazeproject-6ebb9" />
-                  <option name="projectNumber" value="251682901144" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

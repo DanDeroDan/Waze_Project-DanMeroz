@@ -23,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        setContentView(R.layout.activity_main);
+
+        // דוגמה: לחיצה על כפתור הצטרפות
+        findViewById(R.id.joinBtn).setOnClickListener(v -> {
+            String code = "A1B2C3"; // כאן תביא את הקוד מה-EditText
+            String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            joinGroupByCode(code, userId); // קריאה לפונקציה
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
