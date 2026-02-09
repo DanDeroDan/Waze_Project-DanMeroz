@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251682901144",
+    "project_id": "wazeproject-6ebb9",
+    "storage_bucket": "wazeproject-6ebb9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251682901144:android:bab38262840e46dfea94ed",
+        "android_client_info": {
+          "package_name": "com.example.wazeproject_dan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEUkprGGzgTza3tf2wJhpYRUXY-3NlOmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
